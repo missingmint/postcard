@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3975AE311B3D5C8600E45E5B /* AlbertEinsteinStamp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3975AE301B3D5C8600E45E5B /* AlbertEinsteinStamp.jpg */; };
 		39F889761B3C153D002658AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F889751B3C153D002658AD /* AppDelegate.swift */; };
 		39F889781B3C153D002658AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F889771B3C153D002658AD /* ViewController.swift */; };
 		39F8897B1B3C153D002658AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F889791B3C153D002658AD /* Main.storyboard */; };
 		39F8897D1B3C153D002658AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F8897C1B3C153D002658AD /* Images.xcassets */; };
 		39F889801B3C153D002658AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F8897E1B3C153D002658AD /* LaunchScreen.xib */; };
 		39F8898C1B3C153D002658AD /* PostcardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F8898B1B3C153D002658AD /* PostcardTests.swift */; };
+		39F889961B3C1B77002658AD /* SagradaFamilia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 39F889951B3C1B77002658AD /* SagradaFamilia.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3975AE301B3D5C8600E45E5B /* AlbertEinsteinStamp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlbertEinsteinStamp.jpg; sourceTree = "<group>"; };
 		39F889701B3C153D002658AD /* Postcard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postcard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F889741B3C153D002658AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39F889751B3C153D002658AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		39F889851B3C153D002658AD /* PostcardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostcardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F8898A1B3C153D002658AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39F8898B1B3C153D002658AD /* PostcardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardTests.swift; sourceTree = "<group>"; };
+		39F889951B3C1B77002658AD /* SagradaFamilia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SagradaFamilia.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		39F889731B3C153D002658AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3975AE301B3D5C8600E45E5B /* AlbertEinsteinStamp.jpg */,
+				39F889951B3C1B77002658AD /* SagradaFamilia.jpeg */,
 				39F889741B3C153D002658AD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					39F8896F1B3C153D002658AD = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = KXA65FZ739;
 					};
 					39F889841B3C153D002658AD = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -193,6 +200,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39F8897B1B3C153D002658AD /* Main.storyboard in Resources */,
+				39F889961B3C1B77002658AD /* SagradaFamilia.jpeg in Resources */,
+				3975AE311B3D5C8600E45E5B /* AlbertEinsteinStamp.jpg in Resources */,
 				39F889801B3C153D002658AD /* LaunchScreen.xib in Resources */,
 				39F8897D1B3C153D002658AD /* Images.xcassets in Resources */,
 			);
@@ -342,9 +351,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +364,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Postcard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +426,7 @@
 				39F889911B3C153D002658AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F889921B3C153D002658AD /* Build configuration list for PBXNativeTarget "PostcardTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +435,7 @@
 				39F889941B3C153D002658AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
