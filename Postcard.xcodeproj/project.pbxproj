@@ -162,6 +162,7 @@
 		39F889681B3C153C002658AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Sitekit;
 				TargetAttributes = {
